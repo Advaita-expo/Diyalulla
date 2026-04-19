@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya Lulla | Fashion & Lifestyle Influencer</title>
+    <!-- Use Tailwind CSS for modern and clean styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nude: '#FFF0F5',       /* Lavender Blush / Light Pink Base */
+                        champagne: '#FCE4EC',  /* Light Pink for contrast sections */
+                        charcoal: '#333333',
+                        accent: '#D4AF37'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #FFF0F5; color: #333333; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+
+        /* Custom image placeholders to represent 'clean visual storytelling' */
+        .img-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+        }
+        
+        .social-card {
+            transition: all 0.3s ease;
+        }
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Hide scrollbar for clean horizontal scrolls but allow functionality */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-champagne selection:text-charcoal flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white shadow-sm border-b border-champagne transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col md:flex-row justify-center md:justify-between items-center gap-3">
+            <a href="#" class="font-serif text-xl md:text-2xl font-semibold tracking-wide text-charcoal">Diya Lulla<span class="text-pink-500">.</span></a>
+            <div class="flex space-x-4 md:space-x-8 text-[10px] md:text-sm uppercase tracking-widest font-medium">
+                <a href="#about" class="hover:text-pink-500 transition border-b border-transparent hover:border-pink-500">About</a>
+                <a href="#aesthetic" class="hover:text-pink-500 transition border-b border-transparent hover:border-pink-500">Aesthetic</a>
+                <a href="#socials" class="hover:text-pink-500 transition border-b border-transparent hover:border-pink-500">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image Placeholder (High Fashion vibe) -->
+        <div class="absolute inset-0 z-0 bg-champagne">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Fashion Aesthetic" class="w-full h-full object-cover opacity-60">
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
+            <p class="text-sm md:text-base uppercase tracking-[0.3em] font-medium mb-4">Fashion Model • Mumbai</p>
+            <h1 class="text-6xl md:text-8xl font-serif mb-6 drop-shadow-sm">Diya Lulla</h1>
+            <p class="text-lg md:text-xl font-light italic mb-8">"Written by Lord, lived with Love 👼🏻💝"</p>
+            
+            <a href="#socials" class="inline-block px-10 py-3 bg-charcoal text-white text-sm uppercase tracking-widest hover:bg-white hover:text-charcoal border border-charcoal transition-all duration-300 rounded-full">Explore My World</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-nude">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2">
+                <!-- Profile Image Placeholder representing her from the reference -->
+                <div class="aspect-[4/5] overflow-hidden rounded-t-full shadow-xl relative">
+                    <img src="https://i.pinimg.com/1200x/8c/12/34/8c12344e5bb83e4cd869184ee2ce1d50.jpg" alt="Diya Lulla Portrait" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 space-y-6">
+                <h2 class="text-4xl font-serif text-charcoal">About Diya</h2>
+                <div class="w-12 h-0.5 bg-pink-400"></div>
+                <p class="text-gray-600 leading-relaxed text-lg font-light">
+                    I am an Indian fashion and lifestyle influencer who believes in the power of <strong class="font-medium text-charcoal">clean visual storytelling</strong> and <strong class="font-medium text-charcoal">modern aesthetics</strong>. 
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg font-light">
+                    My content seamlessly blends fashion, beauty, and intimate lifestyle moments, meticulously designed to resonate with Gen Z and millennial audiences. Based in Mumbai, I strive to create trends while staying authentic.
+                </p>
+                <div class="pt-4 space-y-1">
+                    <p class="italic font-medium">Rep: @tgbtroop</p>
+                    <p class="font-medium text-charcoal"><a href="mailto:diyalullawork@gmail.com" class="hover:text-pink-500 transition">diyalullawork@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aesthetic Gallery Section -->
+    <section id="aesthetic" class="py-24 px-6 bg-champagne">
+        <div class="max-w-6xl mx-auto text-center mb-10 md:mb-16">
+            <h2 class="text-4xl font-serif mb-4">Curated Aesthetic</h2>
+            <p class="text-gray-500 uppercase tracking-widest text-sm">Visual Storytelling</p>
+            <p class="md:hidden text-[10px] uppercase tracking-widest mt-4 text-gray-400 font-sans">Swipe to view <i class="fas fa-arrow-right ml-1"></i></p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto flex md:grid md:grid-cols-3 gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-8 md:pb-0 w-full px-4 md:px-0" style="scroll-padding-left: 1rem;">
+            <!-- Image 1 -->
+            <div class="group relative aspect-[3/4] overflow-hidden shadow-lg bg-gray-200 snap-center shrink-0 w-[80vw] md:w-auto rounded-xl md:rounded-none">
+                <img src="https://i.pinimg.com/1200x/62/11/8a/62118a6491289e2360f2a8d24af512ee.jpg" alt="Fashion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 img-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span class="text-white font-medium tracking-wider uppercase text-sm">Fashion</span>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="group relative aspect-[3/4] md:translate-y-12 overflow-hidden shadow-lg bg-gray-200 snap-center shrink-0 w-[80vw] md:w-auto rounded-xl md:rounded-none">
+                <img src="https://i.pinimg.com/1200x/59/e2/5e/59e25ee8bf746b70645b1a856196b24f.jpg" alt="Lifestyle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 img-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span class="text-white font-medium tracking-wider uppercase text-sm">Lifestyle</span>
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="group relative aspect-[3/4] overflow-hidden shadow-lg bg-gray-200 snap-center shrink-0 w-[80vw] md:w-auto rounded-xl md:rounded-none">
+                <img src="https://i.pinimg.com/736x/89/40/66/89406663609386f11a2d65b20da65b33.jpg" alt="Beauty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="absolute inset-0 img-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span class="text-white font-medium tracking-wider uppercase text-sm">Beauty</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section id="featured-video" class="py-24 px-6 bg-nude">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+            <h2 class="text-4xl font-serif mb-4">Featured Video</h2>
+            <p class="text-gray-500 uppercase tracking-widest text-sm">Watch Now</p>
+        </div>
+        <div class="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl relative aspect-video border-[4px] border-white">
+            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/824Bx0tzoyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Instagram Reels Section -->
+    <section id="instagram-spotlight" class="py-16 md:py-24 border-t border-champagne bg-champagne">
+        <div class="max-w-4xl mx-auto text-center mb-8 md:mb-12 px-4">
+            <h2 class="text-3xl md:text-4xl font-serif mb-3 md:mb-4 text-gray-800">Latest Reels</h2>
+            <p class="text-gray-600 uppercase tracking-widest text-xs md:text-sm">@diyalulla8</p>
+            <p class="md:hidden text-[10px] uppercase tracking-widest mt-4 text-gray-400 font-sans">Swipe to view <i class="fas fa-arrow-right ml-1"></i></p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto flex md:flex-row gap-6 md:gap-6 justify-start md:justify-center items-center md:items-start overflow-x-auto hide-scrollbar snap-x snap-mandatory px-6 md:px-6 pb-8 md:pb-0" style="scroll-padding-left: 1.5rem;">
+            <!-- Embed 1 -->
+            <div class="w-full flex justify-center snap-center shrink-0" style="max-width: 326px;">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQcEkyoii8H/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 10px 15px -3px rgba(0,0,0,0.1); margin:0; max-width:326px; padding:0; width:100%;"></blockquote>
+            </div>
+
+            <!-- Embed 2 (Middle) -->
+            <div class="w-full flex justify-center snap-center shrink-0" style="max-width: 326px;">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CzOaGX7KOhs/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 10px 15px -3px rgba(0,0,0,0.1); margin:0; max-width:326px; padding:0; width:100%;"></blockquote>
+            </div>
+            
+            <!-- Embed 3 -->
+            <div class="w-full flex justify-center snap-center shrink-0" style="max-width: 326px;">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOLizt9EvzT/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; box-shadow:0 10px 15px -3px rgba(0,0,0,0.1); margin:0; max-width:326px; padding:0; width:100%;"></blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section id="socials" class="py-24 px-6 bg-nude border-t-2 border-champagne">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-serif mb-4">Connect With Me</h2>
+            <p class="text-gray-500 uppercase tracking-widest text-sm">Follow the Journey</p>
+        </div>
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 text-center">
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/diyalulla8?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==d" target="_blank" class="social-card flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-pink-50">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-4 shadow-md">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span class="font-medium text-charcoal">diyalulla8</span>
+                <span class="text-xs text-gray-500 mt-1">90.2k+</span>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/@leodiya8?si=IDMGyuAHzsrjldqT" target="_blank" class="social-card flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-pink-50">
+                <div class="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center text-white text-2xl mb-4 shadow-md">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <span class="font-medium text-charcoal">Leodiya8</span>
+                <span class="text-xs text-gray-500 mt-1">Subscribe</span>
+            </a>
+
+            <!-- Snapchat -->
+            <a href="https://snapchat.com/t/fIHO8H9O" target="_blank" class="social-card flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-pink-50">
+                <div class="w-16 h-16 rounded-full bg-yellow-400 flex items-center justify-center text-charcoal text-2xl mb-4 shadow-md">
+                    <i class="fab fa-snapchat-ghost"></i>
+                </div>
+                <span class="font-medium text-charcoal">Leodiya08</span>
+                <span class="text-xs text-gray-500 mt-1">Add Me</span>
+            </a>
+
+            <!-- Pinterest -->
+            <a href="https://pin.it/7hSZ29nkJ" target="_blank" class="social-card flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-pink-50">
+                <div class="w-16 h-16 rounded-full bg-red-700 flex items-center justify-center text-white text-2xl mb-4 shadow-md">
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+                <span class="font-medium text-charcoal">leo_diya</span>
+                <span class="text-xs text-gray-500 mt-1">Pin With Me</span>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/18P5AVoVjy/?mibextid=wwXIfr" target="_blank" class="social-card flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-pink-50 col-span-2 md:col-span-1 mx-auto w-3/4 md:w-full">
+                <div class="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl mb-4 shadow-md">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <span class="font-medium text-charcoal">Diya Lulla</span>
+                <span class="text-xs text-gray-500 mt-1">Like Page</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="bg-charcoal text-nude py-16 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl font-serif mb-6">Let's Create Together.</h2>
+            <p class="text-gray-400 mb-4 font-light">For work queries, collaborations, or styling needs, feel free to drop a message.</p>
+            <p class="text-champagne font-medium mb-8 text-lg font-sans"><i class="fas fa-envelope mr-2"></i> diyalullawork@gmail.com</p>
+            
+            <a href="mailto:diyalullawork@gmail.com" class="inline-block px-10 py-3 bg-transparent text-nude text-sm uppercase tracking-widest border border-nude hover:bg-nude hover:text-charcoal transition-all duration-300 rounded-full mb-12">
+                DM / Email Me
+            </a>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 Diya Lulla. All Rights Reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="https://linktr.ee/Diyalulla" target="_blank" class="hover:text-white transition">Linktree</a>
+                    <span>•</span>
+                    <span class="italic">Rep: @tgbtroop</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
